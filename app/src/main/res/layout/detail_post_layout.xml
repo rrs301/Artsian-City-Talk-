@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_margin="1.5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="2dp"
+        android:layout_weight="1"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="1dp"
+        android:background="#fff"
+        android:onClick="HealthAndCare"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/PostImage"
+                android:layout_height="230dp"
+                android:layout_gravity="center_vertical"
+                android:background="#000"
+
+                android:src="@drawable/imageplaceholder"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/PostImage"
+                android:text="Title Of Post"
+                android:id="@+id/PostTitle"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="24dp"
+                android:textSize="25dp"
+                android:textColor="#000"
+                />
+            <RatingBar
+                android:id="@+id/RatingBar"
+                android:layout_height="20dp"
+                android:layout_width="wrap_content"
+                android:numStars="5"
+                android:rating="3.5"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_below="@+id/PostTitle"
+                android:isIndicator="false"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address Of Post Is here"
+                android:layout_below="@+id/RatingBar"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/PostAddress"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Call"
+                android:textSize="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:background="#ff47c788"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/SplitLine_hor1"
+                android:id="@+id/button" />
+
+            <View
+                android:id="@+id/SplitLine_hor1"
+                android:layout_width="match_parent"
+                android:layout_height= "0.3dp"
+                android:layout_below="@+id/PostAddress"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#ffababab" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone:"
+                android:id="@+id/PostPhone"
+                android:layout_below="@+id/SplitLine_hor1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="20dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Map"
+                android:onClick="GetMap"
+                android:textSize="10dp"
+                android:background="#ff47c788"
+                android:layout_above="@+id/SplitLine_hor1"
+                android:layout_alignLeft="@+id/button"
+                android:layout_alignStart="@+id/button" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>

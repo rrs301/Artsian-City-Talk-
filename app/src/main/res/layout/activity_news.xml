@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    xmlns:rv="http://schemas.android.com/apk/res-auto"
+   >
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center_horizontal"
+       android:layout_margin="10dp"
+       android:id="@+id/Category">
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/Latest_News"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:paddingBottom="7dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingTop="7dp"
+        android:text="Latest News"
+        android:textColor="#03A9F4"
+        rv:rv_backgroundColor="#ffffff"
+        rv:rv_backgroundPressColor="#03A9F4"
+        rv:rv_isRadiusHalfHeight="true"
+        rv:rv_isRippleEnable="true"
+        rv:rv_strokeColor="#03A9F4"
+        rv:rv_strokePressColor="#6D8FB0"
+        rv:rv_strokeWidth="1dp"
+        rv:rv_textPressColor="#ffffff"/>
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/TopHeadline"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/Latest_News"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingTop="7dp"
+        android:text="Top Headline"
+        android:textColor="#03A9F4"
+        rv:rv_backgroundColor="#ffffff"
+        rv:rv_backgroundPressColor="#03A9F4"
+        rv:rv_isRadiusHalfHeight="true"
+        rv:rv_isRippleEnable="true"
+        rv:rv_strokeColor="#03A9F4"
+        rv:rv_strokePressColor="#6D8FB0"
+        rv:rv_strokeWidth="1dp"
+        rv:rv_textPressColor="#ffffff"/>
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/Sport"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/TopHeadline"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingTop="7dp"
+        android:text="Sport"
+        android:textColor="#03A9F4"
+        rv:rv_backgroundColor="#ffffff"
+        rv:rv_backgroundPressColor="#03A9F4"
+        rv:rv_isRadiusHalfHeight="true"
+        rv:rv_isRippleEnable="true"
+        rv:rv_strokeColor="#03A9F4"
+        rv:rv_strokePressColor="#6D8FB0"
+        rv:rv_strokeWidth="1dp"
+        rv:rv_textPressColor="#ffffff"/>
+
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/LifeSyle"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_below="@+id/Latest_News"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingTop="7dp"
+        android:text="LifeSyle"
+        android:textColor="#03A9F4"
+        rv:rv_backgroundColor="#ffffff"
+        rv:rv_backgroundPressColor="#03A9F4"
+        rv:rv_isRadiusHalfHeight="true"
+        rv:rv_isRippleEnable="true"
+        rv:rv_strokeColor="#03A9F4"
+        rv:rv_strokePressColor="#6D8FB0"
+        rv:rv_strokeWidth="1dp"
+        rv:rv_textPressColor="#ffffff"/>
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/Technology"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Latest_News"
+        android:layout_toRightOf="@+id/LifeSyle"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingTop="7dp"
+        android:text="Technology"
+        android:textColor="#03A9F4"
+        rv:rv_backgroundColor="#ffffff"
+        rv:rv_backgroundPressColor="#03A9F4"
+        rv:rv_isRadiusHalfHeight="true"
+        rv:rv_isRippleEnable="true"
+        rv:rv_strokeColor="#03A9F4"
+        rv:rv_strokePressColor="#6D8FB0"
+        rv:rv_strokeWidth="1dp"
+        rv:rv_textPressColor="#ffffff"/>
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/Entertenment"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Latest_News"
+        android:layout_toRightOf="@+id/Technology"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingTop="7dp"
+        android:text="Entertenment"
+        android:textColor="#03A9F4"
+        rv:rv_backgroundColor="#ffffff"
+        rv:rv_backgroundPressColor="#03A9F4"
+        rv:rv_isRadiusHalfHeight="true"
+        rv:rv_isRippleEnable="true"
+        rv:rv_strokeColor="#03A9F4"
+        rv:rv_strokePressColor="#6D8FB0"
+        rv:rv_strokeWidth="1dp"
+        rv:rv_textPressColor="#ffffff"/>
+   </RelativeLayout>
+    <view
+        android:id="@+id/recycler_view_News"
+        class="android.support.v7.widget.RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+       android:layout_below="@+id/Category"
+
+        />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

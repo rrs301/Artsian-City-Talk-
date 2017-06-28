@@ -1,0 +1,735 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MyActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <view
+                android:id="@+id/recycler_view_slider"
+                class="android.support.v7.widget.RecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:orientation="horizontal"
+                android:layout_marginRight="7dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="4dp"
+
+                />
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar"
+                android:layout_marginTop="50dp"
+                android:layout_centerHorizontal="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4"
+                android:layout_marginTop="2dp"
+                android:id="@+id/mainLiner"
+                android:layout_below="@+id/recycler_view_slider"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:layout_weight="1"
+                    >
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_view"
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:elevation="2dp"
+                        android:layout_weight="1"
+                        card_view:cardCornerRadius="4dp"
+                        card_view:cardElevation="1dp"
+                        android:background="#fff"
+                        android:onClick="HealthAndCare"
+                        >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/image1"
+                            android:padding="8dp"
+                            android:layout_marginBottom="15dp"
+                            android:src="@drawable/heart"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Health And Care"
+                            android:layout_marginBottom="3dp"
+                            android:textSize="12dp"
+
+                            android:layout_gravity="center|bottom"/>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/cat3"
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:elevation="2dp"
+                        android:layout_weight="1"
+                        card_view:cardCornerRadius="4dp"
+                        card_view:cardElevation="1dp"
+                        android:onClick="Repair"
+                        >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="15dp"
+                            android:src="@drawable/repair"
+                            android:padding="8dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Repair"
+                            android:layout_marginBottom="3dp"
+                            android:textSize="12dp"
+                            android:layout_gravity="center|bottom"/>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/cat2"
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:elevation="2dp"
+                        android:layout_weight="1"
+                        card_view:cardCornerRadius="4dp"
+                        card_view:cardElevation="1dp"
+                        android:onClick="HomeCare"
+                        >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="15dp"
+                            android:src="@drawable/homedecor"
+                            android:padding="8dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Home Care"
+                            android:textSize="12dp"
+                            android:layout_marginBottom="3dp"
+                            android:layout_gravity="center|bottom"/>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:layout_weight="1"
+                    >
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_view2"
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:elevation="2dp"
+                        android:layout_weight="1"
+                        card_view:cardCornerRadius="4dp"
+                        card_view:cardElevation="1dp"
+                        android:onClick="PersonalService"
+
+                        >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="15dp"
+                            android:padding="8dp"
+
+                            android:src="@drawable/personalservice"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Personal Service"
+                            android:layout_marginBottom="3dp"
+                            android:textSize="12dp"
+                            android:layout_gravity="center|bottom"/>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/cat4"
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:elevation="2dp"
+                        android:layout_weight="1"
+                        card_view:cardCornerRadius="4dp"
+                        card_view:cardElevation="1dp"
+                        android:onClick="Party"
+                        >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="15dp"
+                            android:padding="8dp"
+
+                            android:src="@drawable/party_event"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Party and Event"
+                            android:layout_marginBottom="3dp"
+                            android:textSize="12dp"
+                            android:layout_gravity="center|bottom"/>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/cat"
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:elevation="2dp"
+                        android:layout_weight="1"
+                        card_view:cardCornerRadius="4dp"
+                        card_view:cardElevation="1dp"
+                        android:onClick="Shops"
+                        >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="15dp"
+                            android:padding="8dp"
+
+                            android:src="@drawable/shop"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Shops"
+                            android:layout_marginBottom="3dp"
+                            android:textSize="12dp"
+                            android:layout_gravity="center|bottom"/>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:layout_weight="1"
+                    >
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_view3"
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:elevation="2dp"
+                        android:layout_weight="1"
+                        card_view:cardCornerRadius="4dp"
+                        card_view:cardElevation="1dp"
+                        android:onClick="Business"
+                        >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="15dp"
+                            android:src="@drawable/suitcase"
+                            android:padding="8dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Business"
+                            android:layout_marginBottom="3dp"
+                            android:textSize="12dp"
+                            android:layout_gravity="center|bottom"/>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_view8"
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:elevation="2dp"
+                        android:layout_weight="1"
+                        card_view:cardCornerRadius="4dp"
+                        card_view:cardElevation="1dp"
+                        android:onClick="Academy"
+                        >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="15dp"
+                            android:src="@drawable/academy"
+                            android:padding="8dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Academy"
+                            android:layout_marginBottom="3dp"
+                            android:textSize="12dp"
+                            android:layout_gravity="center|bottom"/>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_view9"
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:elevation="2dp"
+                        android:layout_weight="1"
+                        card_view:cardCornerRadius="4dp"
+                        card_view:cardElevation="1dp"
+                        android:onClick="Importent"
+                        >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="15dp"
+                            android:src="@drawable/pumpkin"
+                            android:padding="8dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Farmer"
+                            android:layout_marginBottom="3dp"
+                            android:textSize="12dp"
+                            android:layout_gravity="center|bottom"/>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:layout_weight="1"
+                    >
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_view11"
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:elevation="2dp"
+                        android:layout_weight="1"
+                        card_view:cardCornerRadius="4dp"
+                        card_view:cardElevation="1dp"
+                        android:onClick="Food"
+                        >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="15dp"
+                            android:src="@drawable/food"
+                            android:padding="8dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hotels/Food"
+                            android:layout_marginBottom="3dp"
+                            android:textSize="12dp"
+                            android:layout_gravity="center|bottom"/>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_view12"
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:elevation="2dp"
+                        android:layout_weight="1"
+                        card_view:cardCornerRadius="4dp"
+                        card_view:cardElevation="1dp"
+                        android:onClick="Bus"
+                        >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="15dp"
+                            android:src="@drawable/bus"
+                            android:padding="8dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bus Time"
+                            android:layout_marginBottom="3dp"
+                            android:textSize="12dp"
+                            android:layout_gravity="center|bottom"/>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_view13"
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:elevation="2dp"
+                        android:layout_weight="1"
+                        card_view:cardCornerRadius="4dp"
+                        card_view:cardElevation="1dp"
+                        android:onClick="Railway"
+                        >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="15dp"
+                            android:src="@drawable/rail"
+                            android:padding="8dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Railway Table"
+                            android:layout_marginBottom="3dp"
+                            android:textSize="12dp"
+                            android:layout_gravity="center|bottom"/>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:scaleType="centerCrop"
+                android:layout_below="@+id/mainLiner"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:id="@+id/bys_sell_btn"
+                android:onClick="SellRent"
+                android:src="@drawable/bus_sell_rent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buy-Sell-Rent"
+                android:textSize="25dp"
+                android:layout_below="@+id/mainLiner"
+                android:layout_marginTop="30dp"
+
+                android:layout_centerHorizontal="true"
+                android:id="@+id/buy_sell_text"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sell or Rent you old product for someone to buy"
+                android:textSize="17dp"
+                android:lines="2"
+                android:layout_below="@+id/buy_sell_text"
+                android:textColor="#a2ffffff"
+                android:layout_alignLeft="@+id/buy_sell_text"
+                android:layout_alignStart="@+id/buy_sell_text" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Emergency Contacts"
+                android:textSize="16dp"
+                android:textColor="#000"
+                android:id="@+id/emergency_txt"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_below="@+id/bys_sell_btn"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:id="@+id/emergency__layout"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/emergency_txt"
+                android:layout_weight="1"
+                >
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/Ambulance"
+                    android:layout_margin="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:elevation="2dp"
+                    android:layout_weight="1"
+                    android:onClick="AmbulanceCall"
+                    card_view:cardCornerRadius="4dp"
+                    card_view:cardElevation="1dp"
+
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/ambulance"
+                        android:onClick="AmbulanceCall"
+
+                        android:padding="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ambulance"
+                        android:layout_marginBottom="3dp"
+                        android:textSize="12dp"
+                        android:layout_gravity="center|bottom"/>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/police"
+                    android:layout_margin="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:elevation="2dp"
+                    android:layout_weight="1"
+                    card_view:cardCornerRadius="4dp"
+                    card_view:cardElevation="1dp"
+                    android:onClick="PoliceCall"
+
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/polic_car"
+                        android:onClick="PoliceCall"
+
+                        android:padding="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Police"
+                        android:layout_marginBottom="3dp"
+                        android:textSize="12dp"
+                        android:layout_gravity="center|bottom"/>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/Fire_Services"
+                    android:layout_margin="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:elevation="2dp"
+                    android:layout_weight="1"
+                    android:onClick="FireCall"
+
+                    card_view:cardCornerRadius="4dp"
+                    card_view:cardElevation="1dp"
+
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/fire"
+                        android:onClick="FireCall"
+
+                        android:padding="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fire-Bigrade"
+                        android:layout_marginBottom="3dp"
+                        android:textSize="12dp"
+                        android:layout_gravity="center|bottom"/>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Radio"
+                android:id="@+id/RadioText"
+                android:textSize="16dp"
+                android:textColor="#000"
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_below="@+id/emergency__layout"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:id="@+id/Radio"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/emergency__layout"
+                >
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/radioOld"
+                    android:layout_margin="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:elevation="2dp"
+                    android:layout_weight="1"
+                    card_view:cardCornerRadius="7dp"
+                    card_view:cardElevation="1dp"
+
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:onClick="Music"
+                        android:src="@drawable/noncheesy"
+                        android:scaleType="centerCrop"
+                        />
+                    <!--   <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:text="Music Kida"
+                           android:textSize="20dp"
+                           android:background="#70949494"
+                           android:gravity="center_horizontal|center_vertical"/>-->
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/RadioCampus"
+                    android:layout_margin="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:elevation="2dp"
+                    android:layout_weight="1"
+                    android:onClick="RadioOne"
+                    android:layout_marginBottom="60dp"
+                    card_view:cardCornerRadius="7dp"
+                    card_view:cardElevation="1dp"
+
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:src="@drawable/cricketmatlogoonly"
+
+                        />
+                    <!--  <TextView
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:text="CrickMat"
+                          android:textSize="20dp"
+                          android:background="#70949494"
+                          android:gravity="center_horizontal|center_vertical"/>-->
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/Radio"
+                >
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffffff"
+        android:id="@+id/BottomTab">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="home"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingBottom="7dp"
+                android:paddingTop="3dp"
+
+                android:src="@drawable/homemenuicon"
+                android:id="@+id/HomeMenu"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textSize="13dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="News"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/newsmenuicon"
+                android:id="@+id/NewsMenu"
+                android:paddingTop="5dp"
+                android:paddingBottom="7dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="News"
+                android:textSize="13dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="event"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/salemenuicon"
+                android:id="@+id/OfferMenu"
+                android:onClick="event"
+                android:paddingBottom="7dp"
+                android:paddingTop="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Offer/Event"
+                android:textSize="13dp"
+                android:onClick="event"
+
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <com.wunderlist.slidinglayer.SlidingLayer
+        xmlns:slidingLayer="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/slidingLayer1"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+
+
+        slidingLayer:offsetDistance="@dimen/offset_distance"
+        slidingLayer:previewOffsetDistance="@dimen/preview_offset_distance"
+        slidingLayer:stickTo="right"
+        slidingLayer:changeStateOnTap="true">
+        <include
+            android:id="@+id/sidebar"
+            layout="@layout/sidebar"/>
+    </com.wunderlist.slidinglayer.SlidingLayer>
+
+</RelativeLayout>

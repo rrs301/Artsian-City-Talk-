@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:layout_weight="1"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="4dp"
+        android:background="#fff"
+
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="100dp"
+                android:id="@+id/NewsImage"
+                android:layout_height="100dp"
+                android:layout_gravity="center_vertical"
+
+
+                android:src="@drawable/imageplaceholder"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textSize="14dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/NewsTitle"
+
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/NewsImage"
+                android:layout_marginTop="7dp"
+                android:textColor="#000"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="News Description"
+                android:textSize="12dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/NewsDescripton"
+
+                android:layout_marginRight="8dp"
+                android:layout_toRightOf="@+id/NewsImage"
+                android:layout_below="@+id/NewsTitle"
+                android:layout_marginTop="7dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Source"
+                android:textSize="13dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/source"
+                android:lines="2"
+                android:textColor="#ff1a7ac8"
+                android:layout_marginRight="8dp"
+                android:layout_toRightOf="@+id/NewsImage"
+                android:layout_below="@+id/NewsDescripton"
+                android:layout_marginTop="7dp"
+                />
+
+
+
+        </RelativeLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00ffffff"
+            android:id="@+id/ButtonLayer"/>
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>

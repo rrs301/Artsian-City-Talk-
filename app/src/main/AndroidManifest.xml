@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+    package="com.innocruts.artisans">
+
+   <uses-permission android:name="android.permission.INTERNET" />
+    <!-- GCM connects to Google Services. -->
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name="com.innocruts.artisans.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.innocruts.artisans.permission.C2D_MESSAGE" />
+    <!-- This app has permission to register and receive dataf message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/artisanslogo"
+        android:label="@string/app_name"
+       
+        android:supportsRtl="true"
+        tools:replace="icon"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.innocruts.artisans.MobileVerification"
+            android:label="@string/app_name"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MyActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".OTP_Check"
+            android:label="@string/app_name"
+            android:parentActivityName=".MobileVerification"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.innocruts.artisans.MobileVerification" />
+        </activity>
+        <activity
+            android:name=".WebViewActivity"
+            android:label="@string/title_activity_web_view"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".GetSubCategory"
+            android:label="@string/app_name"
+            android:parentActivityName=".MyActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.innocruts.artisans.MyActivity" />
+        </activity>
+        <activity
+            android:name=".GetPostData"
+            android:label="@string/app_name"
+            android:parentActivityName=".GetSubCategory"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.innocruts.artisans.GetSubCategory" />
+        </activity>
+        <activity
+            android:name=".DetailPostView"
+            android:label="@string/app_name"
+            android:parentActivityName=".GetPostData" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.innocruts.artisans.GetPostData" />
+        </activity>
+        <activity
+            android:name=".News"
+            android:label="@string/title_activity_news"
+            android:parentActivityName=".MyActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.innocruts.artisans.MyActivity" />
+        </activity>
+        <activity
+            android:name=".Buy_sell_activity"
+            android:label="@string/app_name"
+            android:parentActivityName=".MyActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.innocruts.artisans.MyActivity" />
+        </activity>
+        <activity
+            android:name=".Buy_Sell_Menu"
+            android:label="@string/title_activity_buy__sell__menu"
+            android:parentActivityName=".Buy_sell_activity"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.innocruts.artisans.Buy_sell_activity" />
+        </activity>
+        <activity
+            android:name=".StoreSellBanner"
+            android:label="@string/title_activity_store_sell_banner"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Sell_Rent_Detail_Activity"
+            android:label="@string/app_name"
+            android:parentActivityName=".Buy_sell_activity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.innocruts.artisans.Buy_sell_activity" />
+        </activity>
+        <activity
+            android:name=".Post_Ad"
+            android:label="@string/title_activity_post__ad"
+            android:parentActivityName=".Buy_sell_activity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.innocruts.artisans.Buy_sell_activity" />
+        </activity>
+        <activity
+            android:name=".Offer_Event"
+            android:label="@string/title_activity_offer__event"
+            android:parentActivityName=".MyActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.innocruts.artisans.MyActivity" />
+        </activity>
+        <activity
+            android:name=".animation"
+            android:label="@string/title_activity_animation" >
+        </activity>
+        <activity
+            android:name=".ThankYouPage"
+            android:label="@string/title_activity_thank_you_page" >
+        </activity>
+        <activity
+            android:name=".popup_image"
+            android:label="@string/title_activity_popup_image" >
+        </activity>
+        <activity
+            android:name=".ShareAppPage"
+            android:label="@string/title_activity_share_app_page"
+            android:parentActivityName=".MyActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.innocruts.artisans.MyActivity" />
+        </activity>
+        <activity
+            android:name=".DownloadAcitivity"
+            android:label="@string/title_activity_share_app_page" >
+        </activity>
+        <activity
+            android:name=".OfflineData"
+            android:label="@string/title_activity_share_app_page" >
+        </activity>
+        <activity
+            android:name=".ContactUs"
+            android:label="@string/title_activity_share_app_page"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar">
+        </activity>
+
+        <receiver
+            android:name="com.pushbots.google.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.innocruts.citytalk" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.pushbots.push.DefaultPushHandler" />
+
+        <service android:name="com.pushbots.push.GCMIntentService" />
+
+        <activity
+            android:name=".AboutUs"
+            android:label="@string/title_activity_about_us"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+   >
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:cardview="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+
+        android:id="@+id/cardv"
+        android:elevation="5dp"
+        >
+
+       <!-- <EditText
+            android:id="@+id/srchname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@android:drawable/ic_menu_search"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:textColor="#000"
+            android:hint="Search"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            />-->
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:textColor="#000"
+            android:hint="Search"
+            android:dropDownSelector="#000"
+            android:layout_margin="10dp"
+            android:drawableRight="@android:drawable/ic_menu_search"
+            android:background="@android:color/transparent"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+             />
+
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler"
+        android:layout_below="@+id/cardv"
+        android:orientation="horizontal"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lownet"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/notnetlogo"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/no_internet"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/low"
+            android:layout_below="@+id/notnetlogo"
+            android:layout_centerHorizontal="true"
+            android:text="Low Internet Connection"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/calltext"
+            android:text="Call for free Information"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:layout_below="@+id/low"
+            android:textSize="17dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ff47c788"
+            android:layout_below="@+id/calltext"
+            android:padding="7dp"
+            android:onClick="call"
+            android:layout_centerHorizontal="true"
+            android:text="Call on 7276387873"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

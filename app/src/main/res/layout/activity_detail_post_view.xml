@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent"
+    xmlns:rv="http://schemas.android.com/apk/res-auto">
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_margin="1.5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="2dp"
+        android:layout_weight="1"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="1dp"
+        android:background="#fff"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/DPostImage"
+                android:layout_height="230dp"
+                android:layout_gravity="center_vertical"
+                android:background="#000"
+
+                android:src="@drawable/imageplaceholder"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/DPostImage"
+                android:text="Title Of Post"
+                android:id="@+id/DPostTitle"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="24dp"
+                android:textSize="23dp"
+                android:textColor="#000"
+                />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/DRatingBar"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/DPostTitle"
+                android:src="@drawable/viewicon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(-)"
+                android:id="@+id/Views"
+                android:textSize="20dp"
+                android:layout_below="@+id/DPostTitle"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/DRatingBar"/>
+         <!--   <RatingBar
+                android:id="@+id/DRatingBar"
+                android:layout_height="20dp"
+                android:layout_width="wrap_content"
+                android:numStars="5"
+                android:rating="3.5"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_below="@+id/DPostTitle"
+                android:isIndicator="false"
+
+                />
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/RateUs"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/DPostTitle"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:layout_marginLeft="50dp"
+
+                android:paddingBottom="7dp"
+                android:paddingLeft="17dp"
+                android:paddingRight="17dp"
+                android:paddingTop="7dp"
+                android:textSize="14dp"
+                android:text="Rate Us"
+
+                android:textColor="#ffffff"
+                rv:rv_backgroundColor="#fffd6d00"
+                rv:rv_backgroundPressColor="#fff"
+                rv:rv_isRadiusHalfHeight="true"
+                rv:rv_isRippleEnable="true"
+                rv:rv_strokeColor="#fffd6d00"
+                rv:rv_strokePressColor="#fffd6d00"
+                rv:rv_strokeWidth="1dp"
+
+                rv:rv_textPressColor="#fffd6d00"/>-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address Of Post Is here"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/DPostAddress"
+                android:layout_below="@+id/DRatingBar"
+                android:layout_toLeftOf="@+id/Call"
+                android:layout_toStartOf="@+id/Call" />
+
+
+            <View
+                android:id="@+id/SplitLine_hor1"
+                android:layout_width="match_parent"
+                android:layout_height= "0.3dp"
+                android:layout_below="@+id/DPostAddress"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#ffababab" />
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/GetMap"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/SplitLine_hor1"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:layout_marginLeft="50dp"
+
+                android:paddingBottom="7dp"
+                android:paddingLeft="17dp"
+                android:paddingRight="17dp"
+                android:paddingTop="7dp"
+                android:textSize="14dp"
+                android:text="Get on Map"
+                android:onClick="call"
+                android:textColor="#ffffff"
+                rv:rv_backgroundColor="#ff47c788"
+                rv:rv_backgroundPressColor="#fff"
+                rv:rv_isRadiusHalfHeight="true"
+                rv:rv_isRippleEnable="true"
+                rv:rv_strokeColor="#ff47c788"
+                rv:rv_strokePressColor="#ff47c788"
+                rv:rv_strokeWidth="1dp"
+
+                rv:rv_textPressColor="#ff47c788"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone:"
+                android:textColor="#000"
+                android:id="@+id/PostPhone"
+                android:layout_below="@+id/SplitLine_hor1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="20dp"/>
+
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/Call"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SplitLine_hor1"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:layout_marginLeft="50dp"
+
+                android:paddingBottom="7dp"
+                android:paddingLeft="17dp"
+                android:paddingRight="17dp"
+                android:paddingTop="7dp"
+                android:textSize="14dp"
+                android:text="Call"
+                android:onClick="call"
+                android:textColor="#ffffff"
+                rv:rv_backgroundColor="#ff47c788"
+                rv:rv_backgroundPressColor="#fff"
+                rv:rv_isRadiusHalfHeight="true"
+                rv:rv_isRippleEnable="true"
+                rv:rv_strokeColor="#ff47c788"
+                rv:rv_strokePressColor="#ff47c788"
+                rv:rv_strokeWidth="1dp"
+
+                rv:rv_textPressColor="#ff47c788"/>
+            <View
+                android:id="@+id/SplitLine_hor2"
+                android:layout_width="match_parent"
+                android:layout_height= "0.3dp"
+                android:layout_below="@+id/PostPhone"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#ffababab"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SplitLine_hor2"
+                android:text="Service Provide:"
+                android:textColor="#ff399c6b"
+                android:textSize="17dp"
+                android:id="@+id/PostServiceText"
+                android:layout_marginTop="15dp"
+
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/PostServiceText"
+                android:text="Service Provided"
+                android:textColor="#ff9f9f9f"
+                android:id="@+id/PostService"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"/>
+            <View
+                android:id="@+id/SplitLine_hor3"
+                android:layout_width="match_parent"
+                android:layout_height= "0.3dp"
+                android:layout_below="@+id/PostService"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#ffababab"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SplitLine_hor3"
+                android:text="About Us"
+                android:textSize="17dp"
+                android:textColor="#ff399c6b"
+                android:id="@+id/PostAboutusText"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/PostAboutusText"
+                android:text="About Us"
+                android:id="@+id/PostAboutus"
+                android:textColor="#ff9f9f9f"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,201 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:rv="http://schemas.android.com/apk/res-auto"
+   >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/addimage"
+        android:id="@+id/AdsImage"
+        android:onClick="showFileChooser"
+        android:background="@drawable/linear_border"
+      />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:onClick="showFileChooser"
+            android:background="#00ffffff"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Name"
+
+    android:textSize="17sp"
+    android:textColor="#ff47bf80"
+    android:id="@+id/NameText"
+    android:layout_marginLeft="10dp"
+    android:layout_below="@+id/AdsImage"
+    android:textStyle="italic" />
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Enter Product Name"
+                android:textSize="15dp"
+           android:id="@+id/NameEditBox"
+           android:textColor="#000"
+           android:layout_below="@+id/NameText"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:textSize="17sp"
+            android:textColor="#ff47bf80"
+            android:layout_marginTop="6dp"
+            android:id="@+id/PriceText"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/NameEditBox"
+            android:textStyle="italic" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Eenter Product Price"
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:id="@+id/PriceEditBox"
+            android:layout_below="@+id/PriceText"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textSize="17sp"
+            android:textColor="#ff47bf80"
+            android:layout_marginTop="6dp"
+            android:id="@+id/CategorySelectText"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/PriceEditBox"
+            android:textStyle="italic" />
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/Choose_Catrogory"
+            android:prompt="@string/category"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:layout_below="@+id/CategorySelectText"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="17sp"
+            android:textColor="#ff47bf80"
+            android:layout_marginTop="6dp"
+            android:id="@+id/DescriptionText"
+            android:layout_marginLeft="10dp"
+
+            android:layout_below="@+id/spinner1"
+            android:textStyle="italic" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Write Product Description"
+            android:textSize="15dp"
+            android:inputType="textPostalAddress"
+            android:lines="3"
+            android:textColor="#000"
+            android:layout_below="@+id/DescriptionText"
+            android:id="@+id/AdsDescription"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textSize="17sp"
+            android:textColor="#ff47bf80"
+            android:layout_marginTop="6dp"
+            android:id="@+id/AddressText"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/AdsDescription"
+            android:textStyle="italic" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Address"
+            android:textSize="15dp"
+            android:inputType="textPostalAddress"
+            android:lines="3"
+            android:textColor="#000"
+            android:layout_below="@+id/AddressText"
+            android:id="@+id/AdsAddressEditBox"/>
+       <!-- <com.flyco.roundview.RoundTextView
+            android:id="@+id/SubmitBtn"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/AdsAddressEditBox"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:onClick="UploadBtn"
+           android:layout_centerHorizontal="true"
+            android:paddingBottom="13dp"
+            android:paddingLeft="23dp"
+            android:paddingRight="23dp"
+            android:paddingTop="13dp"
+            android:text="Submit"
+            android:textColor="#ffffff"
+            rv:rv_backgroundColor="#03A9F4"
+            rv:rv_backgroundPressColor="#fff"
+            rv:rv_isRadiusHalfHeight="true"
+            rv:rv_isRippleEnable="true"
+            rv:rv_strokeColor="#03A9F4"
+            rv:rv_strokePressColor="#6D8FB0"
+            rv:rv_strokeWidth="1dp"
+            rv:rv_textPressColor="#03A9F4"/>-->
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/RentSell"
+            android:layout_below="@+id/AdsAddressEditBox">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rent"
+                android:textSize="15dp"
+                android:id="@+id/rent"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rent"
+            android:text="Sell"
+            android:textSize="15dp"
+            android:id="@+id/sell"/>
+    </RadioGroup>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BtnUpload"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/RentSell"
+            android:layout_marginTop="5dp"
+            android:textColor="#fff"
+            android:background="#ff47bf80"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/submit"/>
+
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

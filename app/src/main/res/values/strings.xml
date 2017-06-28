@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Artisans</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="Choose_Location">
+        <item>GandhiNagar</item>
+        <item>Riddhi-Siddhi Nagar</item>
+        <item>Kolpewadi</item>
+        <item>Sanjivani</item>
+        <item>Bus Depo</item>
+    </string-array>
+
+    <string name="category">Choose a Category</string>
+
+    <string-array name="Choose_Catrogory">
+        <item>Electronics</item>
+        <item>Car-Bikes</item>
+        <item>Home</item>
+        <item>Books/Stationary</item>
+        <item>Farmer Prodcust</item>
+        <item>Furniture and Other</item>
+    </string-array>
+
+    <string name="City">Choose a City</string>
+
+    <string-array name="Choose_City">
+        <item>Koparagaon</item>
+        <item>Hingoli</item>
+    </string-array>
+
+    <string name="title_activity_otp__check">City Talk</string>
+    <string name="title_activity_buy__sell__menu">Buy_Sell_Menu</string>
+    <string name="title_activity_news">News</string>
+    <string name="title_activity_post__ad">Post_Ad</string>
+    <string name="title_activity_store_sell_banner">Store</string>
+    <string name="title_activity_web_view">City Talk</string>
+    <string name="title_activity_offer__event">Offer/Event</string>
+    <string name="title_activity_animation">animation</string>
+    <string name="title_activity_thank_you_page">Thank You</string>
+    <string name="title_activity_popup_image">popup_image</string>
+    <string name="title_activity_share_app_page">ShareAppPage</string>
+    <string name="title_activity_about_us">AboutUs</string>
+</resources>

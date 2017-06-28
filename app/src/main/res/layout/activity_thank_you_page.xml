@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:rv="http://schemas.android.com/apk/res-auto"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/ShopImage"
+        android:src="@drawable/store_sell"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thank You For posting advertise"
+        android:layout_below="@+id/ShopImage"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:textColor="#ffff2c37"
+        android:gravity="center"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If You want to delete your product"
+        android:textSize="14dp"
+        android:id="@+id/Text1"
+        android:textColor="#000"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SMS your details on 7276387873"
+        android:textSize="14dp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:id="@+id/secondText"
+        android:layout_below="@+id/Text1"
+        android:layout_centerHorizontal="true" />
+
+    <View
+        android:id="@+id/SplitLine_hor1"
+        android:layout_width="match_parent"
+        android:layout_height= "0.3dp"
+        android:layout_below="@+id/secondText"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="#ffababab" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SplitLine_hor1"
+        android:text="Thank You!!!"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="22dp"
+        android:textColor="#fffd6d00"/>
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/goback"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_marginLeft="50dp"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="13dp"
+        android:paddingLeft="23dp"
+        android:paddingRight="23dp"
+        android:paddingTop="13dp"
+        android:textSize="17dp"
+        android:text="Go Back To Home"
+        android:onClick="SellProduct"
+        android:textColor="#ffffff"
+        rv:rv_backgroundColor="#ff44c084"
+        rv:rv_backgroundPressColor="#fff"
+        rv:rv_isRadiusHalfHeight="true"
+        rv:rv_isRippleEnable="true"
+        rv:rv_strokeColor="#ff44c084"
+        rv:rv_strokePressColor="#ff44c084"
+        rv:rv_strokeWidth="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        rv:rv_textPressColor="#ff44c084"/>
+
+</RelativeLayout>

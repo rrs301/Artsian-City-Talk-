@@ -1,0 +1,10 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="shadow_size">8dp</dimen>
+    <dimen name="layer_size">340dp</dimen>
+    <dimen name="preview_offset_distance">3dp</dimen>
+    <dimen name="offset_distance">2dp</dimen>
+</resources>

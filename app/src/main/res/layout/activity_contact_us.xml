@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    xmlns:rv="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/login_background"
+    tools:context="com.innocruts.classifiedapp.ContactUs">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_margin="5dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        android:layout_weight="1"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="5dp"
+
+        android:onClick="HealthAndCare"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact Us"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/ContactUs"
+                android:layout_marginTop="20dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Business Name"
+                android:id="@+id/businessName"
+                android:textColor="#000"
+                android:gravity="top"
+                android:layout_margin="5dp"
+
+                android:layout_centerVertical="true"
+                android:layout_below="@+id/ContactUs"
+
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Business Contact Number"
+                android:id="@+id/businessPhone"
+                android:textColor="#000"
+                android:gravity="top"
+                android:layout_margin="5dp"
+
+                android:layout_centerVertical="true"
+                android:layout_below="@+id/businessName"
+
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Business Service"
+                android:id="@+id/businessService"
+                android:textColor="#000"
+                android:gravity="top"
+                android:layout_margin="5dp"
+                android:lines="3"
+                android:layout_centerVertical="true"
+                android:layout_below="@+id/businessPhone"
+
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="About Business"
+                android:textColor="#000"
+                android:id="@+id/textMsg"
+                android:lines="3"
+                android:gravity="top"
+                android:layout_margin="10dp"
+
+                android:layout_centerVertical="true"
+                android:layout_below="@+id/businessService"
+
+                 />
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/submit"
+                android:text="Submit"
+                android:onClick="Sumbit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textMsg"
+                android:layout_margin="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="13dp"
+                android:paddingLeft="23dp"
+                android:paddingRight="23dp"
+                android:paddingTop="13dp"
+                android:textSize="17dp"
+
+
+                android:textColor="#ffffff"
+                rv:rv_backgroundColor="#ff44c084"
+                rv:rv_backgroundPressColor="#fff"
+                rv:rv_isRadiusHalfHeight="true"
+                rv:rv_isRippleEnable="true"
+                rv:rv_strokeColor="#ff44c084"
+                rv:rv_strokePressColor="#ff44c084"
+                rv:rv_strokeWidth="1dp"
+
+
+                rv:rv_textPressColor="#ff44c084"/>
+
+
+        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    xmlns:rv="http://schemas.android.com/apk/res-auto"
+
+    android:background="@drawable/login_background"
+
+    >
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/mobileicon"
+        android:layout_centerHorizontal="true"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_centerVertical="true"
+            >
+        <TextView
+            android:text="Mobile Verification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/MobileNumberText"
+            android:textSize="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+
+            />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/MobileNumberText"
+                android:hint="4 Digit OTP"
+                android:id="@+id/OTPCode"
+                android:textSize="35dp"
+                android:inputType="number"
+                android:ems="4"
+                android:background="@drawable/rounded_edit_text"
+                android:padding="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_margin="25dp"
+                android:focusable="true"
+                android:singleLine="true"
+                android:gravity="center_horizontal" />
+
+
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/submit"
+                android:text="Submit"
+                android:onClick="Sumbit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="13dp"
+                android:paddingLeft="23dp"
+                android:paddingRight="23dp"
+                android:paddingTop="13dp"
+                android:textSize="17dp"
+
+
+                android:textColor="#ffffff"
+                rv:rv_backgroundColor="#ff44c084"
+                rv:rv_backgroundPressColor="#fff"
+                rv:rv_isRadiusHalfHeight="true"
+                rv:rv_isRippleEnable="true"
+                rv:rv_strokeColor="#ff44c084"
+                rv:rv_strokePressColor="#ff44c084"
+                rv:rv_strokeWidth="1dp"
+                android:layout_alignParentBottom="true"
+
+                rv:rv_textPressColor="#ff44c084"/>
+
+
+        </RelativeLayout>
+
+
+</RelativeLayout>
